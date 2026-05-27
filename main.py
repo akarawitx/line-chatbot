@@ -11,8 +11,8 @@ from menus import MENUS, MENU_NAMES, MENU_TEXT
 
 app = Flask(__name__)
 
-LINE_CHANNEL_ACCESS_TOKEN = os.environ.get("qi8YydZ0KXlK24h/ApD9fcvJwLgLOKfCgGaQp2KM2kJQjbKZQw502ZNa6Xx+L8UQ9k5i0uwpvQlMPU1BpbX0GDhC7RUKbWOwYDgwAjnYZIkZ0iyjczW/hmr/z392gF50RlHyQsV5Dm0QH+jwGriebgdB04t89/1O/w1cDnyilFU=", "")
-GEMINI_API_KEY            = os.environ.get("AIzaSyAUuWFE18ExR92RCSAdYfadi-tBzMzy_8g", "")
+LINE_CHANNEL_ACCESS_TOKEN = os.environ.get("LINE_CHANNEL_ACCESS_TOKEN", "")
+GEMINI_API_KEY            = os.environ.get("GEMINI_API_KEY", "")
 
 client = genai.Client(api_key=GEMINI_API_KEY)
 
