@@ -10,7 +10,7 @@ from flask import Flask, request, abort
 from menus import MENUS, MENU_NAMES, MENU_TEXT
 
 app = Flask(__name__)
-
+# v2
 LINE_CHANNEL_ACCESS_TOKEN = os.environ.get("LINE_CHANNEL_ACCESS_TOKEN", "")
 GEMINI_API_KEY            = os.environ.get("GEMINI_API_KEY", "")
 
